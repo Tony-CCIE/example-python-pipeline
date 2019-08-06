@@ -8,7 +8,7 @@ pipeline {
     }
     stage('helm list') {
       steps {
-        sh 'helm list'
+        sh 'sudo helm list'
       }
     }
   }
