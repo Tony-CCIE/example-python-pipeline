@@ -6,5 +6,10 @@ pipeline {
         sh 'echo "hello world"'
       }
     }
+    stage('helm list') {
+      steps {
+        echo 'hello k8s'
+      }
+    }
   }
 }
