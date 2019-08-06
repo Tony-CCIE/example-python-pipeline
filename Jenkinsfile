@@ -8,7 +8,7 @@ pipeline {
     }
     stage('helm list') {
       steps {
-        sh 'sudo helm list'
+        sh 'kubectl get pods'
       }
     }
   }
