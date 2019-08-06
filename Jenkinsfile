@@ -8,7 +8,7 @@ pipeline {
     }
     stage('helm list') {
       steps {
-        echo 'hello k8s'
+        sh 'helm list'
       }
     }
   }
