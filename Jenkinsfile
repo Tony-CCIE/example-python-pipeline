@@ -8,7 +8,7 @@ pipeline {
     }
     stage('helm list') {
       steps {
-        sh 'kubectl get pods'
+        sh 'kubectl get pods --all-namespaces'
       }
     }
   }
